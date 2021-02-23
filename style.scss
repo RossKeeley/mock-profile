@@ -15,7 +15,7 @@ hr {
   height: 1px;
   border: none;
 }
-// All buttons
+/* All buttons */
 button {
   color: #472681;
   background-color: inherit;
@@ -25,7 +25,7 @@ button {
 button:hover {
   cursor: pointer;
 }
-// Main page container
+/* Main page container */
 .container {
   display: flex;
   flex-direction: column;
@@ -34,7 +34,12 @@ button:hover {
   max-width: 700px;
   min-width: 500px;
 }
-// Card Profile image
+.row {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+/* Card Profile image */
 .card-image {
   height: 100%;
   background-size: 100%;
@@ -57,8 +62,8 @@ button:hover {
     width: 100%;
   }
 }
-// Container for all profile info
-.card-info {
+/* Container for all profile info */
+.card {
   position: relative;
   top: -25px;
   z-index: 2;
@@ -67,39 +72,26 @@ button:hover {
   padding: 20px 40px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  // Profile Title/Name
-  .title {
-    height: 80px;
-    display: flex;
+  /* Profile Title/Name */
+  .card-title {
     justify-content: space-between;
-    align-items: center;
-    padding: 0 8px;
     h1 {
       font-size: 60px;
       font-weight: 900;
     }
-    // Three dots options button
+    /* Three dots options button */
     #options-icon {
       font-size: 30px;
     }
   }
-  // Follow button
-  .follow {
-    margin: 8px 0px 30px 0px;
-    padding-left: 8px;
-    #follow-button {
-      width: 100px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      padding-left: 0;
-    }
-    // Follow button text
-    p {
-      font-size: 16px;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
+  #follow-button {
+    width: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0;
+    margin: 5px 0 30px 0;
+    /* Folow button icon */
     #follow-icon {
       font-size: 18px;
       font-weight: 600;
@@ -108,21 +100,27 @@ button:hover {
       padding: 3px;
       margin-right: 5px;
     }
+    /* Follow button text */
+    p {
+      font-size: 16px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
   }
   /* Statistics container for Patents, Followers, and Following */
   .stats {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 5px 0;
-    font-size: 17px;
-    font-weight: 800;
-    line-height: 1.1;
-    padding: 15px;
-    // div for each Individual Statistic
+    padding: 20px;
+    border-top: 1px solid #472681;
+    border-bottom: 1px solid #472681;
+    /* div for each Individual Statistic */
     .stat {
+      margin: 5px 0;
       text-align: center;
-      // Span for statistic value to be inserted seperately
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.1;
+      /* Span for statistic value to be inserted seperately */
       span {
         font-size: 30px;
         font-weight: 800;
@@ -130,27 +128,31 @@ button:hover {
       }
     }
   }
-  // Categories container
+  /* Categories container */
   .categories {
-    // Categories title
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    /* Categories title */
     h3 {
       text-transform: uppercase;
       font-weight: 800;
       margin: 25px 0 10px 0;
       padding-left: 8px;
     }
-    // Buttons to display more info
+    /* Buttons to display more info */
     button {
       width: 100%;
       text-align: left;
       padding-left: 8px;
       font-size: 35px;
       font-weight: 400;
-      margin: 20px 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // Right arrow buttn icon
+      padding: 30px 8px;
+      border-bottom: 1px solid #472681;
+      /* Right arrow buttn icon */
       i {
         font-size: 40px;
       }

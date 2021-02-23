@@ -16,6 +16,7 @@ hr {
   border: none;
 }
 
+/* All buttons */
 button {
   color: #472681;
   background-color: inherit;
@@ -27,6 +28,7 @@ button:hover {
   cursor: pointer;
 }
 
+/* Main page container */
 .container {
   display: flex;
   flex-direction: column;
@@ -36,6 +38,13 @@ button:hover {
   min-width: 500px;
 }
 
+.row {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+/* Card Profile image */
 .card-image {
   height: 100%;
   background-size: 100%;
@@ -59,7 +68,8 @@ button:hover {
   width: 100%;
 }
 
-.card-info {
+/* Container for all profile info */
+.card {
   position: relative;
   top: -25px;
   z-index: 2;
@@ -68,39 +78,32 @@ button:hover {
   padding: 20px 40px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  /* Profile Title/Name */
   /* Statistics container for Patents, Followers, and Following */
+  /* Categories container */
 }
-.card-info .title {
-  height: 80px;
-  display: flex;
+.card .card-title {
   justify-content: space-between;
-  align-items: center;
-  padding: 0 8px;
+  /* Three dots options button */
 }
-.card-info .title h1 {
+.card .card-title h1 {
   font-size: 60px;
   font-weight: 900;
 }
-.card-info .title #options-icon {
+.card .card-title #options-icon {
   font-size: 30px;
 }
-.card-info .follow {
-  margin: 8px 0px 30px 0px;
-  padding-left: 8px;
-}
-.card-info .follow #follow-button {
+.card #follow-button {
   width: 100px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 0;
+  margin: 5px 0 30px 0;
+  /* Folow button icon */
+  /* Follow button text */
 }
-.card-info .follow p {
-  font-size: 16px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-.card-info .follow #follow-icon {
+.card #follow-button #follow-icon {
   font-size: 18px;
   font-weight: 600;
   border: 3px solid #472681;
@@ -108,42 +111,58 @@ button:hover {
   padding: 3px;
   margin-right: 5px;
 }
-.card-info .stats {
-  display: flex;
+.card #follow-button p {
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.card .stats {
   justify-content: space-between;
-  align-items: center;
+  padding: 20px;
+  border-top: 1px solid #472681;
+  border-bottom: 1px solid #472681;
+  /* div for each Individual Statistic */
+}
+.card .stats .stat {
   margin: 5px 0;
+  text-align: center;
   font-size: 17px;
   font-weight: 800;
   line-height: 1.1;
-  padding: 15px;
+  /* Span for statistic value to be inserted seperately */
 }
-.card-info .stats .stat {
-  text-align: center;
-}
-.card-info .stats .stat span {
+.card .stats .stat span {
   font-size: 30px;
   font-weight: 800;
   height: auto;
 }
-.card-info .categories h3 {
+.card .categories {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  /* Categories title */
+  /* Buttons to display more info */
+}
+.card .categories h3 {
   text-transform: uppercase;
   font-weight: 800;
   margin: 25px 0 10px 0;
   padding-left: 8px;
 }
-.card-info .categories button {
+.card .categories button {
   width: 100%;
   text-align: left;
   padding-left: 8px;
   font-size: 35px;
   font-weight: 400;
-  margin: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 30px 8px;
+  border-bottom: 1px solid #472681;
+  /* Right arrow buttn icon */
 }
-.card-info .categories button i {
+.card .categories button i {
   font-size: 40px;
 }
 
