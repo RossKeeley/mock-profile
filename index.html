@@ -3,33 +3,46 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <title>Mock Steve Jobs Profile</title>
   </head>
   <body>
     <div class="container">
       <div class="profile-picture">
-        <a href="#">Back</a>
-        <img src="" alt="">
+        <a href="#"><i class="fas fa-chevron-left"></i> Back</a>
+        <img src="images/steve-jobs.jpg" alt="">
       </div>
       <div class="information">
         <div class="title">
           <h1>Steve Jobs</h1>
-          <button type="button" name="button"></button>
+          <button type="button" name="button"><i class="fas fa-ellipsis-h"></i></button>
         </div>
         <div class="follow">
-          <button type="button" name="button" id="follow">Follow</button>
+          <button type="button" name="button" id="follow"><i class="fas fa-plus"></i> <p>Follow</p></button>
         </div>
         <hr>
         <div class="stats">
-
+          <div class="stat" id="patents">
+            <span>313</span>
+            <p>PATENTS</p>
+          </div>
+          <div class="stat" id="followers">
+            <span>1M 50K</span>
+            <p>FOLLOWERS</p>
+          </div>
+          <div class="stat" id="following">
+            <span>361</span>
+            <p>FOLLOWING</p>
+          </div>
         </div>
         <hr>
         <div class="categories">
-          <button type="button" name="button">Electronic Devices</button>
+          <h3>categories</h3>
+          <button type="button" name="button">Electronic devices <i class="fas fa-chevron-right"></i></button>
           <hr>
-          <button type="button" name="button">Design</button>
+          <button type="button" name="button">Design <i class="fas fa-chevron-right"></i></button>
           <hr>
-          <button type="button" name="button">Transportation</button>
+          <button type="button" name="button">Transportation <i class="fas fa-chevron-right"></i></button>
         </div>
       </div>
     </div>
