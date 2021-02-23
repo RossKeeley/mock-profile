@@ -6,40 +6,60 @@
 }
 
 body {
-  background-color: #bdbdbd;
+  background-color: #454545;
 }
 
+/* Partition lines */
 hr {
   background-color: #472681;
   height: 1px;
   border: none;
 }
 
+button {
+  color: #472681;
+  background-color: inherit;
+  border: none;
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  font-family: "Noto Sans JP";
   margin: auto;
   width: 100vw;
   max-width: 700px;
   min-width: 500px;
 }
-.container .profile-picture {
+
+.card-image {
   height: 100%;
   background-size: 100%;
   width: 100%;
   top: 0px;
 }
-.container .profile-picture a {
+.card-image #back-button {
   margin: 30px;
   position: absolute;
+  display: flex;
+  align-items: center;
   color: #fff;
+  font-size: 20px;
   text-decoration: none;
 }
-.container .profile-picture img {
+.card-image #back-button #back-icon {
+  font-size: 40px;
+  margin-right: 5px;
+}
+.card-image img {
   width: 100%;
 }
-.container .information {
+
+.card-info {
   position: relative;
   top: -25px;
   z-index: 2;
@@ -48,41 +68,47 @@ hr {
   padding: 20px 40px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  /* Statistics container for Patents, Followers, and Following */
 }
-.container .information .title {
+.card-info .title {
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 8px;
 }
-.container .information .title h1 {
+.card-info .title h1 {
   font-size: 60px;
   font-weight: 900;
 }
-.container .information .follow {
-  margin: 8px 0px 30px 0px;
+.card-info .title #options-icon {
+  font-size: 30px;
 }
-.container .information .follow button {
+.card-info .follow {
+  margin: 8px 0px 30px 0px;
+  padding-left: 8px;
+}
+.card-info .follow #follow-button {
   width: 100px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 0;
 }
-.container .information .follow p {
+.card-info .follow p {
   font-size: 16px;
   font-weight: 900;
-  margin-left: 5px;
   text-transform: uppercase;
 }
-.container .information .follow .fa-plus {
+.card-info .follow #follow-icon {
   font-size: 18px;
   font-weight: 600;
   border: 3px solid #472681;
   border-radius: 50%;
   padding: 3px;
+  margin-right: 5px;
 }
-.container .information .stats {
+.card-info .stats {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,21 +118,21 @@ hr {
   line-height: 1.1;
   padding: 15px;
 }
-.container .information .stats .stat {
+.card-info .stats .stat {
   text-align: center;
 }
-.container .information .stats .stat span {
+.card-info .stats .stat span {
   font-size: 30px;
   font-weight: 800;
   height: auto;
 }
-.container .information .categories h3 {
+.card-info .categories h3 {
   text-transform: uppercase;
   font-weight: 800;
   margin: 25px 0 10px 0;
   padding-left: 8px;
 }
-.container .information .categories button {
+.card-info .categories button {
   width: 100%;
   text-align: left;
   padding-left: 8px;
@@ -115,16 +141,10 @@ hr {
   margin: 20px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.container .information .categories button i {
-  font-size: 30px;
-}
-.container .information button {
-  color: #472681;
-  background-color: inherit;
-  border: none;
-  text-decoration: none;
-  font-size: 25px;
+.card-info .categories button i {
+  font-size: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

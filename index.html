@@ -8,20 +8,20 @@
   </head>
   <body>
     <div class="container">
-      <div class="profile-picture">
-        <a href="#"><i class="fas fa-chevron-left"></i> Back</a>
+      <div class="card-image">
+        <a id="back-button" href="#"><i class="fas fa-chevron-left" id="back-icon"></i> Back</a>
         <img src="images/steve-jobs.jpg" alt="">
       </div>
-      <div class="information">
-        <div class="title">
+      <div class="card-info">
+        <div class="row title">
           <h1>Steve Jobs</h1>
-          <button type="button" name="button"><i class="fas fa-ellipsis-h"></i></button>
+          <button type="button" name="button" id="options-button"><i class="fas fa-ellipsis-h" id="options-icon"></i></button>
         </div>
-        <div class="follow">
-          <button type="button" name="button" id="follow"><i class="fas fa-plus"></i> <p>Follow</p></button>
+        <div class="row follow">
+          <button type="button" name="button" id="follow-button"><i class="fas fa-plus" id="follow-icon"></i> <p>Follow</p></button>
         </div>
         <hr>
-        <div class="stats">
+        <div class="row stats">
           <div class="stat" id="patents">
             <span>313</span>
             <p>PATENTS</p>
@@ -36,7 +36,7 @@
           </div>
         </div>
         <hr>
-        <div class="categories">
+        <div class="row categories">
           <h3>categories</h3>
           <button type="button" name="button">Electronic devices <i class="fas fa-chevron-right"></i></button>
           <hr>
