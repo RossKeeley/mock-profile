@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  // justify-content: center;
+  flex-direction: column;
+  font-family: 'Noto Sans JP';
+  margin: auto;
+  width: 50vw;
+  max-width: 600px;
+  min-width: 400px;
+  .profile-picture {
+    height: 300px;
+    background-image: url('images/steve-jobs.jpg');
+    padding: 20px;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .information {
+    background-color: #fff;
+    color: #472681;
+  }
+}
